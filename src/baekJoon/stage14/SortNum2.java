@@ -5,10 +5,14 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
-import java.util.HashSet;
+import java.util.ArrayList;
+import java.util.Collections;
 
-// 14-1 2750 수 정렬하기
-public class SortNum {
+// 14-2 2751 수 정렬하기 2
+/*
+ *
+ */
+public class SortNum2 {
 
 	public static void main(String[] args) throws IOException {
 
@@ -16,20 +20,20 @@ public class SortNum {
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
 		int size = Integer.parseInt( br.readLine() );
-		HashSet<Integer> intSet  = new HashSet();
+		ArrayList<Integer> intList = new ArrayList();
 
 		for( int i = 0; i < size; ++i ) {
-			int num = Integer.parseInt( br.readLine() );
-			intSet.add(num);
+			intList.add( Integer.parseInt( br.readLine() ) );
 		}
 
-		for( int value : intSet ) {
-			bw.write( value + "\n");
+		Collections.sort(intList);
+
+		for( int i = 0; i < intList.size(); ++i ) {
+			bw.write( intList.get(i) + "\n" );
 		}
 
 		bw.flush();
 		br.close();
 		bw.close();
 	}
-
 }

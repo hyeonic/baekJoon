@@ -36,7 +36,6 @@ public class MovieDirectorSyom {
 				bw.write(i + "");
 				break;
 			}
-
 		}
 
 		bw.flush();
