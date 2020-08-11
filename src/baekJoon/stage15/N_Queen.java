@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
-// 10-5 9663 N-Queen
+// 15-5 9663 N-Queen
 public class N_Queen {
 
 	static int n;
