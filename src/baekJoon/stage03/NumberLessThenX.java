@@ -3,6 +3,7 @@ package baekJoon.stage03;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+// 3-11 10871 x보다 작은 수
 public class NumberLessThenX {
 
 	public static void main(String[] args) {

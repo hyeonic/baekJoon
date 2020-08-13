@@ -2,7 +2,7 @@ package baekJoon.stage03;
 
 import java.util.Scanner;
 
-//11021
+// 3-7 11021 A + B - 7
 public class AplusBminus7 {
 	public static void main(String[] args) {
 

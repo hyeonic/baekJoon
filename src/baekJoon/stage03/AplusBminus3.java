@@ -2,6 +2,7 @@ package baekJoon.stage03;
 
 import java.util.Scanner;
 
+// 3-2 10950 A + B - 3
 public class AplusBminus3 {
 	public static void main(String[] args) {
 

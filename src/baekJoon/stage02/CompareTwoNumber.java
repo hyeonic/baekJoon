@@ -2,6 +2,7 @@ package baekJoon.stage02;
 
 import java.util.Scanner;
 
+// 2-1 1330 두 수 비교하기
 public class CompareTwoNumber {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);

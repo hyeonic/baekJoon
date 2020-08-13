@@ -2,7 +2,7 @@ package baekJoon.stage03;
 
 import java.util.Scanner;
 
-// 2741
+// 3-5 2741 N 찍기
 public class NStamping {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

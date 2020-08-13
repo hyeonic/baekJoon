@@ -2,7 +2,7 @@ package baekJoon.stage03;
 
 import java.util.Scanner;
 
-// 2439
+// 3-10 2439 별 찍기 - 2
 public class StarStampingTwo {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

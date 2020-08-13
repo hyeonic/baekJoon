@@ -2,7 +2,7 @@ package baekJoon.stage03;
 
 import java.util.Scanner;
 
-// 11022
+// 3-8 11022 A + B - 8
 public class AplusBminus8 {
 	public static void main(String[] args) {
 

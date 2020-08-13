@@ -2,6 +2,7 @@ package baekJoon.stage03;
 
 import java.util.Scanner;
 
+// 3-3 8393 합
 public class Sum {
 	public static void main(String[] args) {
 

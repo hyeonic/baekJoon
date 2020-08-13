@@ -2,7 +2,7 @@ package baekJoon.stage02;
 
 import java.util.Scanner;
 
-// 2884
+// 2-5 2884 알람시계
 public class Alarm {
 	public static void main(String[] args) {
 
