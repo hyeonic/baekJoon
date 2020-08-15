@@ -27,3 +27,18 @@ java로 풀어보는 baekjoon 단계별로 풀어보기
   | 4. [**14681**](https://www.acmicpc.net/problem/14681) -> [사분면 고르기](<https://github.com/hyeonic/baekjoon/blob/master/src/baekJoon/stage02/Quadrant.java>) |
   | 5. [**2884**](https://www.acmicpc.net/problem/2884) -> [알람 시계](<https://github.com/hyeonic/baekJoon/blob/master/src/baekJoon/stage02/Alarm.java>) |
 
+* | stage3 for문 |
+  |------------------------------------------------------------------------|
+  | 1. [**2739**](https://www.acmicpc.net/problem/2739) -> [구구단](<https://github.com/hyeonic/baekJoon/blob/master/src/baekJoon/stage03/MultiplicationTable.java>) |
+  | 2. [**10950**](https://www.acmicpc.net/problem/10950) -> [A + B - 3](<https://github.com/hyeonic/baekJoon/blob/master/src/baekJoon/stage03/AplusBminus3.java>) |
+  | 3. [**8393**](https://www.acmicpc.net/problem/8393) -> [합](<https://github.com/hyeonic/baekJoon/blob/master/src/baekJoon/stage03/Sum.java>) |
+  | 4. [**15552**](https://www.acmicpc.net/problem/15552) -> [빠른 A + B](<https://github.com/hyeonic/baekJoon/blob/master/src/baekJoon/stage03/FastAplusB.java>) |
+  | 5. [**2741**](https://www.acmicpc.net/problem/2741) -> [N 찍기](<>) |(<https://github.com/hyeonic/baekJoon/blob/master/src/baekJoon/stage03/NStamping.java>) |
+  | 6. [**2742**](https://www.acmicpc.net/problem/2742) -> [기찍 N](<https://github.com/hyeonic/baekJoon/blob/master/src/baekJoon/stage03/StampingN.java>) |
+  | 7. [**11021**](https://www.acmicpc.net/problem/11021) -> [A + B - 7](<https://github.com/hyeonic/baekJoon/blob/master/src/baekJoon/stage03/AplusBminus7.java>) |
+  | 8. [**11022**](https://www.acmicpc.net/problem/11022) -> [A + B - 8](<https://github.com/hyeonic/baekJoon/blob/master/src/baekJoon/stage03/AplusBminus8.java>) |
+  | 9. [**2438**](https://www.acmicpc.net/problem/2438) -> [별 찍기 - 1](<https://github.com/hyeonic/baekJoon/blob/master/src/baekJoon/stage03/StarStampingOne.java>) |
+  | 10. [**2439**](https://www.acmicpc.net/problem/2439) -> [별 찍기 -2](<https://github.com/hyeonic/baekJoon/blob/master/src/baekJoon/stage03/StarStampingTwo.java>) |
+  | 11. [**10871**](https://www.acmicpc.net/problem/10871) -> [x보다 작은 수](<https://github.com/hyeonic/baekJoon/blob/master/src/baekJoon/stage03/NumberLessThenX.java>) |
+  
+  
