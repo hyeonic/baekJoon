@@ -18,8 +18,6 @@ public class StairClimb {
 		int n = Integer.parseInt( br.readLine() );
 		int[] stair = new int[n];
 		ArrayList<Integer> dpList = new ArrayList();
-		int currentIndex = 1;
-		int oneStepCount = 0;
 
 		for( int i = 0; i < n; ++i ) {
 			stair[i] = Integer.parseInt( br.readLine() );

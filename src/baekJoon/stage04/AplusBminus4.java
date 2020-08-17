@@ -2,9 +2,7 @@ package baekJoon.stage04;
 
 import java.util.Scanner;
 
-
-// 추가적인 확인이 필요하다.
-// 10951
+// 4-2 10951 A + B - 4
 public class AplusBminus4 {
 
 	public static void main(String[] args) {
@@ -17,8 +15,6 @@ public class AplusBminus4 {
 
 			System.out.println(a + b);
 		}
-
 		sc.close();
 	}
-
 }

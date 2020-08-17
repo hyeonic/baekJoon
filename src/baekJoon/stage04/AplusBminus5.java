@@ -3,6 +3,7 @@ package baekJoon.stage04;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+// 4-1 10952 A + B - 5
 public class AplusBminus5 {
 	public static void main(String[] args) {
 
