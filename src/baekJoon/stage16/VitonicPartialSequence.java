@@ -7,8 +7,8 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
-// 16-11 11053 가장 긴 증가하는 부분 수열
-public class PartialSequence {
+// 16-12 11054 가장 긴 바이토닉 부분수열
+public class VitonicPartialSequence {
 
 	public static void main(String[] args) throws IOException {
 
@@ -17,38 +17,47 @@ public class PartialSequence {
 
 		int n = Integer.parseInt( br.readLine() );
 		int[] a = new int[n];
-		int[] dp = new int[n];
+		int[][] dp = new int[2][n];
 
 		StringTokenizer st = new StringTokenizer( br.readLine(), " ");
 		for( int i = 0; i < n; ++i ) {
 			a[i] = Integer.parseInt( st.nextToken() );
 		}
 
-		int count = 1;
+		// 정방향
 		for( int i = 0; i < n; ++i ) {
+			dp[0][i] = 1;
 			for( int j = 0; j < n; ++j ) {
-				if( a[i] > a[j]) {
-					if( count < dp[j] + 1 ) {
-						count = dp[j] + 1;
-					}
+				if( a[j] < a[i] && dp[0][i] < dp[0][j] + 1 ) {
+					++dp[0][i];
 				}
 			}
-			dp[i] = count;
-			count = 1;
 		}
 
-		int max = 0;
-		for( int value : dp ) {
-			System.out.println( " value : " + value );
-			if( max < value ) {
-				max = value;
+		// 역방향
+		for( int i = n - 1; i >= 0; --i ) {
+			dp[1][i] = 1;
+			for( int j = n - 1; j >= 0; --j ) {
+				if( a[j] < a[i] && dp[1][i] < dp[1][j] + 1 ) {
+					++dp[1][i];
+				}
 			}
 		}
 
-		bw.write( max + "" ) ;
+		int[] result = new int[n];
+		int max = 0;
+		for( int i = 0; i < n; ++i ) {
+			result[i] = dp[0][i] + dp[1][i];
+			if( max < result[i] ) {
+				max = result[i];
+			}
+		}
+
+		bw.write( (max - 1) + "" );
 
 		bw.flush();
 		br.close();
 		bw.close();
 	}
+
 }
