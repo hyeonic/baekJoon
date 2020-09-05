@@ -169,3 +169,16 @@ java로 풀어보는 baekjoon 단계별로 풀어보기
   | 14. [**9251**](https://www.acmicpc.net/problem/9251) -> LCS |     
   | 15. [**1912**](https://www.acmicpc.net/problem/1912) -> 연속합 |     
   | 16. [**12865**](https://www.acmicpc.net/problem/12865) -> 평범한 배낭 |     
+  
+  | stage17 실습3 |
+  |------------------------------------------------------------------------|  
+  | 준비중 |
+  
+  | stage18 그리디 알고리즘 |
+  |------------------------------------------------------------------------|  
+  | 1. [**11047**](https://www.acmicpc.net/problem/11047) -> [동전 0](<https://github.com/hyeonic/baekjoon/blob/master/src/baekJoon/stage18/ZeroCoin.java>) |   
+  | 2. [**1931**](https://www.acmicpc.net/problem/1931) -> [회의실배정](<https://github.com/hyeonic/baekjoon/blob/master/src/baekJoon/stage18/AllocationOfConferenceRoom.java>) |   
+  | 3. [**11399**](https://www.acmicpc.net/problem/11399) -> [ATM](<https://github.com/hyeonic/baekjoon/blob/master/src/baekJoon/stage18/ATM.java>) |   
+  | 4. [**1541**](https://www.acmicpc.net/problem/1541) -> [잃어버린 괄호](<https://github.com/hyeonic/baekjoon/blob/master/src/baekJoon/stage18/LostParenthesis.java>) |   
+  
+  

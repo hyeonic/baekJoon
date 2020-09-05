@@ -13,26 +13,12 @@ public class LostParenthesis {
         String n = bufferedReader.readLine();
         int result = 0;
 
-        String[] minusSplit = n.split( "-" );
+        String[] minusSplit = n.split( "\\-" );
 
-        for( int i = 0; i < minusSplit.length; ++i ) {
-            int sum = 0;
-            String[] plusOperand = minusSplit[i].split( "\\+" );
+        result += add( minusSplit[0] );
 
-//            System.out.println( "length : " + plusOperand.length );
-
-            int operand1 = Integer.parseInt( plusOperand[0] );
-            int operand2 = Integer.parseInt( plusOperand[1] );
-            sum += operand1 + operand2;
-
-
-//            System.out.println( "sum : " + sum );
-
-            if( i == 0 ) {
-                result += sum;
-            }else {
-                result -= sum;
-            }
+        for( int i = 1; i < minusSplit.length; ++i ) {
+            result -= add( minusSplit[i] );
         }
 
         bufferedWriter.write( result + "" );
@@ -41,6 +27,16 @@ public class LostParenthesis {
         bufferedReader.close();
         bufferedWriter.close();
 
+    }
+
+    public static int add( String plusOperator ) {
+        String[] plusOperands = plusOperator.split( "\\+" );
+        int sum = 0;
+        for( String plusOperand : plusOperands ) {
+            sum += Integer.parseInt( plusOperand );
+        }
+
+        return sum;
     }
 
 }
