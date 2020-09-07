@@ -68,33 +68,34 @@ java로 풀어보는 baekjoon 단계별로 풀어보기
 
   | stage7 함수 |
   |------------------------------------------------------------------------|
-  | 1. [**15596**](https://www.acmicpc.net/problem/15596) -> 정수 N개의 합 |
-  | 2. [**4673**](https://www.acmicpc.net/problem/4673) -> 셀프 넘버 |
-  | 3. [**1065**](https://www.acmicpc.net/problem/1065) -> 한수 |
+  | 1. [**15596**](https://www.acmicpc.net/problem/15596) -> [정수 N개의 합](<https://github.com/hyeonic/baekJoon/blob/master/src/baekJoon/stage07/IntNSum.java>) |
+  | 2. [**4673**](https://www.acmicpc.net/problem/4673) -> [셀프 넘버](<https://github.com/hyeonic/baekJoon/blob/master/src/baekJoon/stage07/SelfNumber.java>) |
+  | 3. [**1065**](https://www.acmicpc.net/problem/1065) -> [한수](<https://github.com/hyeonic/baekJoon/blob/master/src/baekJoon/stage07/Hansu.java>) |
 
   | stage8 문자열 |
   |------------------------------------------------------------------------|
   | 1. [**11654**](https://www.acmicpc.net/problem/11654) -> 아스키 코드 |
   | 2. [**11720**](https://www.acmicpc.net/problem/11720) -> 숫자의 합 |
-  | 3. [**10809**](https://www.acmicpc.net/problem/10809) -> 알파벳 찾기 |
-  | 4. [**2675**](https://www.acmicpc.net/problem/2675) -> 문자열 반복 |
-  | 5. [**1157**](https://www.acmicpc.net/problem/1157) -> 단어 공부 |
-  | 6. [**1152**](https://www.acmicpc.net/problem/1152) -> 단어의 개수 |
+  | 3. [**10809**](https://www.acmicpc.net/problem/10809) -> [알파벳 찾기](<https://github.com/hyeonic/baekJoon/blob/master/src/baekJoon/stage08/FindAlphabet.java>) |
+  | 4. [**2675**](https://www.acmicpc.net/problem/2675) -> [문자열 반복](<https://github.com/hyeonic/baekJoon/blob/master/src/baekJoon/stage08/RepeatString.java>) |
+  | 5. [**1157**](https://www.acmicpc.net/problem/1157) -> [단어 공부](<https://github.com/hyeonic/baekJoon/blob/master/src/baekJoon/stage08/WordStudy.java>) |
+  | 6. [**1152**](https://www.acmicpc.net/problem/1152) -> [단어의 개수](<https://github.com/hyeonic/baekJoon/blob/master/src/baekJoon/stage08/WordCount.java>) |
   | 7. [**2908**](https://www.acmicpc.net/problem/2908) -> 상수 |
-  | 8. [**5622**](https://www.acmicpc.net/problem/5622) -> 다이얼 |
-  | 9. [**2941**](https://www.acmicpc.net/problem/2941) -> 크로아티아 알파벳 |
-  | 10. [**1316**](https://www.acmicpc.net/problem/1316) -> 그룹 단어 체커 |  
+  | 8. [**5622**](https://www.acmicpc.net/problem/5622) -> [다이얼](<https://github.com/hyeonic/baekJoon/blob/master/src/baekJoon/stage08/Dial.java>) |
+  | 9. [**2941**](https://www.acmicpc.net/problem/2941) -> [크로아티아 알파벳](<https://github.com/hyeonic/baekJoon/blob/master/src/baekJoon/stage08/CroatiaAlphabet.java>) |
+  | 10. [**1316**](https://www.acmicpc.net/problem/1316) -> [그룹 단어 체커](<https://github.com/hyeonic/baekJoon/blob/master/src/baekJoon/stage08/GroupWordChecker.java>) |  
 
   | stage9 수학 1 단계 |
   |------------------------------------------------------------------------|
   | 1. [**1712**](https://www.acmicpc.net/problem/1712) -> 손익분기점 |
   | 2. [**2839**](https://www.acmicpc.net/problem/2839) -> 설탕 배달 |
-  | 3. [**2292**](https://www.acmicpc.net/problem/2292) -> 벌집 |
-  | 4. [**1193**](https://www.acmicpc.net/problem/1193) -> 분수찾기 |
-  | 5. [**2869**](https://www.acmicpc.net/problem/2869) -> 달팽이는 올라가고 싶다 |
-  | 6. [**10250**](https://www.acmicpc.net/problem/10250) -> ACM 호텔 |
+  | 3. [**2292**](https://www.acmicpc.net/problem/2292) -> [벌집](<https://github.com/hyeonic/baekJoon/blob/master/src/baekJoon/stage09/Honeycomb.java>) |
+  | 4. [**1193**](https://www.acmicpc.net/problem/1193) -> [분수찾기](<https://github.com/hyeonic/baekJoon/blob/master/src/baekJoon/stage09/FindFractional.java>) |
+  | 5. [**2869**](https://www.acmicpc.net/problem/2869) -> [달팽이는 올라가고 싶다](<https://github.com/hyeonic/baekJoon/blob/master/src/baekJoon/stage09/Snail.java>) |
+  |5 - 1. [**2869**](https://www.acmicpc.net/problem/2869) -> [달팽이는 올라가고 싶다 - 이분 탐색](<https://github.com/hyeonic/baekJoon/blob/master/src/baekJoon/stage09/SnailByBS.java>) |
+  | 6. [**10250**](https://www.acmicpc.net/problem/10250) -> [ACM 호텔](<https://github.com/hyeonic/baekJoon/blob/master/src/baekJoon/stage09/ACMHotel.java>) |
   | 7. [**2775**](https://www.acmicpc.net/problem/2775) -> 부녀회장이 될테야 |
-  | 8. [**1011**](https://www.acmicpc.net/problem/1011) -> Fly me to the Alpha Centauri |
+  | 8. [**1011**](https://www.acmicpc.net/problem/1011) -> [Fly me to the Alpha Centauri](<https://github.com/hyeonic/baekJoon/blob/master/src/baekJoon/stage09/FlyMeToTheAlphaCentauri.java>) |
 
   | stage10 수학 2 단계 |
   |------------------------------------------------------------------------|
@@ -181,4 +182,8 @@ java로 풀어보는 baekjoon 단계별로 풀어보기
   | 3. [**11399**](https://www.acmicpc.net/problem/11399) -> [ATM](<https://github.com/hyeonic/baekjoon/blob/master/src/baekJoon/stage18/ATM.java>) |   
   | 4. [**1541**](https://www.acmicpc.net/problem/1541) -> [잃어버린 괄호](<https://github.com/hyeonic/baekjoon/blob/master/src/baekJoon/stage18/LostParenthesis.java>) |   
   
-  
+  | stage19 수학 3 |
+  |------------------------------------------------------------------------|  
+  | 1. [**5086**](https://www.acmicpc.net/problem/5086) -> [배수와 약수](<https://github.com/hyeonic/baekjoon/blob/master/src/baekJoon/stage19/MultipleAndDivision.java>) |  
+  | 2. [**1037**](https://www.acmicpc.net/problem/1037) -> [약수](<https://github.com/hyeonic/baekjoon/blob/master/src/baekJoon/stage19/Divisor.java>) |
+  | 3. [**11653**](https://www.acmicpc.net/problem/11653) -> [소인수분해](<https://github.com/hyeonic/baekjoon/blob/master/src/baekJoon/stage19/Factorization.java>) |
