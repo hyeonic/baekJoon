@@ -16,19 +16,19 @@ import java.io.OutputStreamWriter;
  */
 public class TaxiGeometry {
 
-	public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException {
 
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-		double r = Double.parseDouble( br.readLine() ); // 반지름
+        double r = Double.parseDouble(br.readLine()); // 반지름
 
-		System.out.printf( "%.6f \n", r*r*Math.PI );
-		System.out.printf( "%.6f", r*r*2 );
+        System.out.printf("%.6f \n", r * r * Math.PI);
+        System.out.printf("%.6f", r * r * 2);
 
-		bw.flush();
-		br.close();
-		bw.close();
-	}
+        bw.flush();
+        br.close();
+        bw.close();
+    }
 
 }

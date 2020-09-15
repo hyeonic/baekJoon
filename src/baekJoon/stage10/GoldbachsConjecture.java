@@ -15,47 +15,47 @@ import java.io.OutputStreamWriter;
  */
 public class GoldbachsConjecture {
 
-	public static int MAX = 10000;
+    public static int MAX = 10000;
     public static boolean[] PRIMEARRAY;
 
-	public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException {
 
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-		PRIMEARRAY = new boolean[MAX + 1];
-		getPrimeNum();
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        PRIMEARRAY = new boolean[MAX + 1];
+        getPrimeNum();
 
-		int count = Integer.parseInt( br.readLine() );
+        int count = Integer.parseInt(br.readLine());
 
-		for( int t = 0; t < count; ++t ) {
-			int input = Integer.parseInt( br.readLine() );
+        for (int t = 0; t < count; ++t) {
+            int input = Integer.parseInt(br.readLine());
 
-			for (int i = input/2; i > 0; --i ) {
-				int num1 = i;
-				int num2 = input - i;
-				if ( PRIMEARRAY[num1] && PRIMEARRAY[num2] ) {
-					bw.write(String.valueOf(num1) + " " + String.valueOf(num2) + "\n");
-					break;
-				}
-			}
-		}
+            for (int i = input / 2; i > 0; --i) {
+                int num1 = i;
+                int num2 = input - i;
+                if (PRIMEARRAY[num1] && PRIMEARRAY[num2]) {
+                    bw.write(String.valueOf(num1) + " " + String.valueOf(num2) + "\n");
+                    break;
+                }
+            }
+        }
 
-		bw.flush();
-		br.close();
-		bw.close();
-	}
+        bw.flush();
+        br.close();
+        bw.close();
+    }
 
-	public static void getPrimeNum() {
-		PRIMEARRAY[0] = false;
-		PRIMEARRAY[1] = false;
+    public static void getPrimeNum() {
+        PRIMEARRAY[0] = false;
+        PRIMEARRAY[1] = false;
 
-		for ( int i = 2; i <= MAX; ++i ) {
-			PRIMEARRAY[i] = true;
-		}
+        for (int i = 2; i <= MAX; ++i) {
+            PRIMEARRAY[i] = true;
+        }
 
-        for(int i = 2; i <= MAX; ++i ) {
-            for(int j = 2; i*j <= MAX; ++j ) {
-            	PRIMEARRAY[i*j] = false;
+        for (int i = 2; i <= MAX; ++i) {
+            for (int j = 2; i * j <= MAX; ++j) {
+                PRIMEARRAY[i * j] = false;
             }
         }
     }

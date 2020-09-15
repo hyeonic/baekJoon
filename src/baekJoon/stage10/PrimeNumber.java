@@ -15,49 +15,49 @@ import java.io.OutputStreamWriter;
  */
 public class PrimeNumber {
 
-	public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException {
 
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-		int m = Integer.parseInt(br.readLine());
-		int n = Integer.parseInt(br.readLine());
-		int sum = 0;
-		int min = Integer.MAX_VALUE;
+        int m = Integer.parseInt(br.readLine());
+        int n = Integer.parseInt(br.readLine());
+        int sum = 0;
+        int min = Integer.MAX_VALUE;
 
-		boolean isPrime = true;
+        boolean isPrime = true;
 
-		if ( m <= 10000 && n <= 10000 ) { // m과 n은 10000 이하 자연수
+        if (m <= 10000 && n <= 10000) { // m과 n은 10000 이하 자연수
 
-			for ( int i = m; i <= n; ++i ) { // m 부터 n 까지 반복
-				isPrime = true;
-				for ( int j = 2; j < i; ++j ) { // 2부터 k/2 까지 나누어지는 숫자가 존재하지 않으면 소수
-					if ( i % j == 0 ) {
-						isPrime = false;
-						break;
-					}
-				}
+            for (int i = m; i <= n; ++i) { // m 부터 n 까지 반복
+                isPrime = true;
+                for (int j = 2; j < i; ++j) { // 2부터 k/2 까지 나누어지는 숫자가 존재하지 않으면 소수
+                    if (i % j == 0) {
+                        isPrime = false;
+                        break;
+                    }
+                }
 
-				if ( isPrime && i != 1 )  { // 소수는 모두 더함
-					sum += i;
-				}
+                if (isPrime && i != 1) { // 소수는 모두 더함
+                    sum += i;
+                }
 
-				if ( i < min && isPrime && i != 1 ) // 최소값을 저장
-					min = i;
+                if (i < min && isPrime && i != 1) // 최소값을 저장
+                    min = i;
 
-			}
+            }
 
-			if ( sum == 0 )
-				bw.write(String.valueOf(-1) + "\n" );
-			else
-				bw.write( sum + "\n" + min );
+            if (sum == 0)
+                bw.write(String.valueOf(-1) + "\n");
+            else
+                bw.write(sum + "\n" + min);
 
-		}else {
-			bw.write(String.valueOf(-1) + "\n" );
-		}
+        } else {
+            bw.write(String.valueOf(-1) + "\n");
+        }
 
-		bw.flush();
-		br.close();
-		bw.close();
-	}
+        bw.flush();
+        br.close();
+        bw.close();
+    }
 }

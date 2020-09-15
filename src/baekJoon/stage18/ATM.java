@@ -7,23 +7,23 @@ import java.util.StringTokenizer;
 // 18-3 11399 ATM
 public class ATM {
 
-    public static void main( String[] args ) throws IOException {
+    public static void main(String[] args) throws IOException {
 
-        BufferedReader bufferedReader = new BufferedReader( new InputStreamReader( System.in ) );
-        BufferedWriter bufferedWriter = new BufferedWriter( new OutputStreamWriter( System.out ) );
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(System.out));
 
-        int n = Integer.parseInt( bufferedReader.readLine() );
+        int n = Integer.parseInt(bufferedReader.readLine());
         int[] withdrawalTimes = new int[n];
 
-        StringTokenizer stringTokenizer = new StringTokenizer( bufferedReader.readLine(), " " );
-        for( int i = 0; i < n; ++i ) {
-            withdrawalTimes[i] = Integer.parseInt( stringTokenizer.nextToken() );
+        StringTokenizer stringTokenizer = new StringTokenizer(bufferedReader.readLine(), " ");
+        for (int i = 0; i < n; ++i) {
+            withdrawalTimes[i] = Integer.parseInt(stringTokenizer.nextToken());
         }
 
-        Arrays.sort( withdrawalTimes );
+        Arrays.sort(withdrawalTimes);
 
         int temp = 0;
-        for( int i = 0; i < n; ++i ) {
+        for (int i = 0; i < n; ++i) {
             temp += withdrawalTimes[i];
             withdrawalTimes[i] = temp;
         }
@@ -33,11 +33,11 @@ public class ATM {
 //        }
 
         int sum = 0;
-        for( int withdrwalTime : withdrawalTimes ) {
+        for (int withdrwalTime : withdrawalTimes) {
             sum += withdrwalTime;
         }
 
-        bufferedWriter.write( sum + "" );
+        bufferedWriter.write(sum + "");
 
         bufferedWriter.flush();
         bufferedReader.close();

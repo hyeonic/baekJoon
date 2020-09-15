@@ -5,18 +5,18 @@ import java.util.Scanner;
 // 1-8 1008 A / B
 public class ADivB {
 
-	public static void main(String[] args) {
-		
-		Scanner sc = new Scanner(System.in);
+    public static void main(String[] args) {
 
-		double num1;
-		double num2;
+        Scanner sc = new Scanner(System.in);
 
-		num1 = sc.nextDouble();
-		num2 = sc.nextDouble();
+        double num1;
+        double num2;
 
-		System.out.print(num1 / num2);
-		
-		sc.close();
-	}
+        num1 = sc.nextDouble();
+        num2 = sc.nextDouble();
+
+        System.out.print(num1 / num2);
+
+        sc.close();
+    }
 }

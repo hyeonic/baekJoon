@@ -9,23 +9,23 @@ import java.util.StringTokenizer;
 
 public class Dp {
 
-	private static int[][] a;
-	private static int[][] dp;
+    private static int[][] a;
+    private static int[][] dp;
 
 
-	 public static void main(String[] args) throws IOException {
-	        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-	        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-	        int n = Integer.parseInt(br.readLine());
-	        a = new int[n][2];
-	        dp = new int[n][n];
+        int n = Integer.parseInt(br.readLine());
+        a = new int[n][2];
+        dp = new int[n][n];
 
-	        for (int i = 0; i < n; i++) {
-	            StringTokenizer st = new StringTokenizer(br.readLine());
-	            a[i][0] = Integer.parseInt(st.nextToken());
-	            a[i][1] = Integer.parseInt(st.nextToken());
-	        }
+        for (int i = 0; i < n; i++) {
+            StringTokenizer st = new StringTokenizer(br.readLine());
+            a[i][0] = Integer.parseInt(st.nextToken());
+            a[i][1] = Integer.parseInt(st.nextToken());
+        }
 
 
 //	        for (int i = 1; i < n; i++) {
@@ -43,19 +43,18 @@ public class Dp {
 //	        }
 
 
+        bw.write(dp[0][n - 1] + "\n");
 
-	        bw.write(dp[0][n - 1] + "\n");
+        bw.flush();
+        br.close();
+        bw.close();
+    }
 
-	        bw.flush();
-	        br.close();
-	        bw.close();
-	    }
+    public static int[][] matrixChain(int n) {
 
-	 public static int[][] matrixChain( int n ) {
+        int j;
 
-		 int j;
-
-		 return null;
-	 }
+        return null;
+    }
 
 }

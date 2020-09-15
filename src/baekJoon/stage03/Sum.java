@@ -4,19 +4,19 @@ import java.util.Scanner;
 
 // 3-3 8393 합
 public class Sum {
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
-		Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
-		int n;
-		int result = 0;
+        int n;
+        int result = 0;
 
-		n = scanner.nextInt();
+        n = scanner.nextInt();
 
-		for (int i = 0; i <= n; ++i) {
-			result += i;
-		}
+        for (int i = 0; i <= n; ++i) {
+            result += i;
+        }
 
-		System.out.println(result);
-	}
+        System.out.println(result);
+    }
 }

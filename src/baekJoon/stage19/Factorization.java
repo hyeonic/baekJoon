@@ -7,17 +7,17 @@ public class Factorization {
 
     public static void main(String[] args) throws IOException {
 
-        BufferedReader bufferedReader = new BufferedReader( new InputStreamReader( System.in ) );
-        BufferedWriter bufferedWriter = new BufferedWriter( new OutputStreamWriter( System.out ) );
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(System.out));
 
-        int n = Integer.parseInt( bufferedReader.readLine() );
+        int n = Integer.parseInt(bufferedReader.readLine());
         int i = 2;
 
-        while ( n >= i ) {
-            if( n % i == 0 ) {
-                bufferedWriter.write( i + "\n" );
+        while (n >= i) {
+            if (n % i == 0) {
+                bufferedWriter.write(i + "\n");
                 n /= i;
-            }else {
+            } else {
                 ++i;
             }
         }

@@ -20,39 +20,39 @@ import java.util.StringTokenizer;
  */
 public class FindPrimeNumber {
 
-	public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException {
 
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
-		int m = Integer.parseInt( st.nextToken() );
-		int n = Integer.parseInt( st.nextToken() );
+        StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+        int m = Integer.parseInt(st.nextToken());
+        int n = Integer.parseInt(st.nextToken());
 
-		boolean[] array = new boolean[n + 1];
-		array[0] = false;
-		array[1] = false;
-		for ( int i = 2; i <= n; ++i ) {
-			array[i] = true;
-		}
+        boolean[] array = new boolean[n + 1];
+        array[0] = false;
+        array[1] = false;
+        for (int i = 2; i <= n; ++i) {
+            array[i] = true;
+        }
 
-		if ( m >= 1 && m <= 1000000 && n >= 1 && m <= 100000000 ) {
+        if (m >= 1 && m <= 1000000 && n >= 1 && m <= 100000000) {
 
-			for( int i = 2; i*i <= n; ++i ) { // 2부터 n까지의 수 중에서 소수는 n의 제곱근보다 작은 소수의 배수를 모두 지우고 남은 수는 모두 소수이다.
-				for( int j = i*i; j <= n;  j += i ) { // 해당 배수는 prime이 아니므로 false
-					array[j] =false;
-				}
-			}
+            for (int i = 2; i * i <= n; ++i) { // 2부터 n까지의 수 중에서 소수는 n의 제곱근보다 작은 소수의 배수를 모두 지우고 남은 수는 모두 소수이다.
+                for (int j = i * i; j <= n; j += i) { // 해당 배수는 prime이 아니므로 false
+                    array[j] = false;
+                }
+            }
 
-			for(int i = m; i <= n; ++i ) {
-	            if(true == array[i]) {
-	                bw.write(i + "\n");
-	            }
-	        }
-		}
+            for (int i = m; i <= n; ++i) {
+                if (true == array[i]) {
+                    bw.write(i + "\n");
+                }
+            }
+        }
 
-		bw.flush();
-		br.close();
-		bw.close();
-	}
+        bw.flush();
+        br.close();
+        bw.close();
+    }
 }

@@ -10,52 +10,52 @@ import java.util.ArrayList;
 // 1316 그룹 단어 체커
 public class GroupWordChecker {
 
-	public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException {
 
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-		int count = Integer.parseInt(br.readLine());
-		int result = 0;
+        int count = Integer.parseInt(br.readLine());
+        int result = 0;
 
-		for ( int i = 0; i < count; i++ ) {
+        for (int i = 0; i < count; i++) {
 
-			String str = br.readLine().toLowerCase();
-			String[] tempStrArray = str.split("");
+            String str = br.readLine().toLowerCase();
+            String[] tempStrArray = str.split("");
 
-			ArrayList<String> strList = new ArrayList<String>();
-			String temp = "";
+            ArrayList<String> strList = new ArrayList<String>();
+            String temp = "";
 
-			boolean isDone = true;
+            boolean isDone = true;
 
-			for ( String s : tempStrArray ) {
-				if ( temp.equals("") ) {
-					temp = s;
-					strList.add(s);
-				}else {
-					if ( s.equals(temp) ) {
-						strList.add(s);
-					}else if ( strList.contains(s) ){
-						isDone = false;
-						System.out.println( str + " isDone? " + isDone);
-						break;
-					}
-					strList.add(s);
-					temp = s;
-				}
-			}
+            for (String s : tempStrArray) {
+                if (temp.equals("")) {
+                    temp = s;
+                    strList.add(s);
+                } else {
+                    if (s.equals(temp)) {
+                        strList.add(s);
+                    } else if (strList.contains(s)) {
+                        isDone = false;
+                        System.out.println(str + " isDone? " + isDone);
+                        break;
+                    }
+                    strList.add(s);
+                    temp = s;
+                }
+            }
 
-			System.out.println( str + " isDone? " + isDone);
-			if ( isDone == true )
-				++result;
+            System.out.println(str + " isDone? " + isDone);
+            if (isDone == true)
+                ++result;
 
-		}
+        }
 
-		bw.write( String.valueOf(result) );
+        bw.write(String.valueOf(result));
 
-		bw.flush();
-		br.close();
-		bw.close();
-	}
+        bw.flush();
+        br.close();
+        bw.close();
+    }
 
 }

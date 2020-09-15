@@ -32,33 +32,33 @@ import java.util.StringTokenizer;
 
 public class FlyMeToTheAlphaCentauri {
 
-	public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException {
 
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-		int t = Integer.parseInt(br.readLine());
+        int t = Integer.parseInt(br.readLine());
 
-		for ( int i = 0; i < t; ++i ) {
-			StringTokenizer st = new StringTokenizer(br.readLine(), " ");
-			int x = Integer.parseInt(st.nextToken());
-			int y = Integer.parseInt(st.nextToken());
+        for (int i = 0; i < t; ++i) {
+            StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+            int x = Integer.parseInt(st.nextToken());
+            int y = Integer.parseInt(st.nextToken());
 
-			int distance = y - x; // 거리
-			int max = (int)Math.sqrt(distance); // max가 변하는 지점의 제곱근. 소수점 버림
+            int distance = y - x; // 거리
+            int max = (int) Math.sqrt(distance); // max가 변하는 지점의 제곱근. 소수점 버림
 
-			if (max == Math.sqrt(distance)) { // distance의 제곱근이 정수로 딱 떨어진다면 규칙
-				bw.write(String.valueOf(2 * max - 1) + "\n" );
-			}else if (distance <= (max * max + max)) {
-				bw.write( String.valueOf(2 * max) + "\n" );
-			}else {
-				bw.write(String.valueOf(2 * max + 1) + "\n" );
-			}
-		}
+            if (max == Math.sqrt(distance)) { // distance의 제곱근이 정수로 딱 떨어진다면 규칙
+                bw.write(String.valueOf(2 * max - 1) + "\n");
+            } else if (distance <= (max * max + max)) {
+                bw.write(String.valueOf(2 * max) + "\n");
+            } else {
+                bw.write(String.valueOf(2 * max + 1) + "\n");
+            }
+        }
 
-		bw.flush();
-		br.close();
-		bw.close();
-	}
+        bw.flush();
+        br.close();
+        bw.close();
+    }
 
 }

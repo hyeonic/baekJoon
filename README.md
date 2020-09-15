@@ -187,3 +187,10 @@ java로 풀어보는 baekjoon 단계별로 풀어보기
   | 1. [**5086**](https://www.acmicpc.net/problem/5086) -> [배수와 약수](<https://github.com/hyeonic/baekjoon/blob/master/src/baekJoon/stage19/MultipleAndDivision.java>) |  
   | 2. [**1037**](https://www.acmicpc.net/problem/1037) -> [약수](<https://github.com/hyeonic/baekjoon/blob/master/src/baekJoon/stage19/Divisor.java>) |
   | 3. [**11653**](https://www.acmicpc.net/problem/11653) -> [소인수분해](<https://github.com/hyeonic/baekjoon/blob/master/src/baekJoon/stage19/Factorization.java>) |
+  | 4. [**2609**](https://www.acmicpc.net/problem/2609) -> [최대공약수와 최소공배수](<https://github.com/hyeonic/baekjoon/blob/master/src/baekJoon/stage19/MCDAndDivision.java>) |
+  | 5. [**2981**](https://www.acmicpc.net/problem/2981) -> 검문 |
+  | 6. [**3036**](https://www.acmicpc.net/problem/3036) -> [링](<https://github.com/hyeonic/baekjoon/blob/master/src/baekJoon/stage19/Ring.java>) |
+  | 7. [**11050**](https://www.acmicpc.net/problem/11050) -> [이항계수 1](<https://github.com/hyeonic/baekjoon/blob/master/src/baekJoon/stage19/BinomialFactor1.java>) |
+  | 8. [**11051**](https://www.acmicpc.net/problem/11051) -> [이항계수 2](<https://github.com/hyeonic/baekjoon/blob/master/src/baekJoon/stage19/BinomialFactor2.java>) |
+  | 9. [**9375**](https://www.acmicpc.net/problem/9375) -> [패션왕 신해빈](<https://github.com/hyeonic/baekjoon/blob/master/src/baekJoon/stage19/FashionKingSHB.java>) |
+  | 10. [**1676**](https://www.acmicpc.net/problem/1676) -> [팩토리얼 0의 개수](<https://github.com/hyeonic/baekjoon/blob/master/src/baekJoon/stage19/NumberOfZero.java>) |

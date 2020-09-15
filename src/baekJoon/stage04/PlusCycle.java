@@ -9,33 +9,33 @@ import java.io.OutputStreamWriter;
 // 4-3 1110 더하기 사이클
 public class PlusCycle {
 
-	public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException {
 
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-		int n = Integer.parseInt( br.readLine() );
-		int count = 0;
-		int temp = n;
+        int n = Integer.parseInt(br.readLine());
+        int count = 0;
+        int temp = n;
 
-		while( true ) {
+        while (true) {
 
-			++count;
+            ++count;
 
-			int temp1 = temp/10;
-			int temp2 = temp%10;
+            int temp1 = temp / 10;
+            int temp2 = temp % 10;
 
-			temp = (temp1 + temp2)%10 + temp2*10;
-			System.out.println( "temp1 : " + temp1 + " temp2 : " + temp2 + " temp : " + temp );
-			if( temp == n ) {
-				break;
-			}
-		}
+            temp = (temp1 + temp2) % 10 + temp2 * 10;
+            System.out.println("temp1 : " + temp1 + " temp2 : " + temp2 + " temp : " + temp);
+            if (temp == n) {
+                break;
+            }
+        }
 
-		bw.write( count + "" );
+        bw.write(count + "");
 
-		bw.flush();
-		br.close();
-		bw.close();
-	}
+        bw.flush();
+        br.close();
+        bw.close();
+    }
 }

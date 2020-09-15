@@ -30,41 +30,41 @@ import java.util.StringTokenizer;
  */
 
 public class SnailByBS {
-	public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException {
 
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		//BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        //BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-		StringTokenizer st = new StringTokenizer( br.readLine(), " " );
-		int a = Integer.parseInt( st.nextToken() );
-		int b = Integer.parseInt( st.nextToken() );
-		int v = Integer.parseInt( st.nextToken() );
+        StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+        int a = Integer.parseInt(st.nextToken());
+        int b = Integer.parseInt(st.nextToken());
+        int v = Integer.parseInt(st.nextToken());
 
-		int start = 0;
-		int end = v;
+        int start = 0;
+        int end = v;
 
-		while ( true ) {
-			int mid = ( ( end + start ) / 2 );
-			System.out.print("mid : " + mid + " || " );
-			int n = (int) Math.ceil( (double) mid / (a - b) ); // 올림값이 해당 지점의 경과 날짜 인 것
-			System.out.print("해당 지점의 경과 날짜 : " + n + " || " );
-			int dayM = n * a - ( n - 1 ) * b; // nA - (n-1)B
-			System.out.println("dayM : " + dayM );
+        while (true) {
+            int mid = ((end + start) / 2);
+            System.out.print("mid : " + mid + " || ");
+            int n = (int) Math.ceil((double) mid / (a - b)); // 올림값이 해당 지점의 경과 날짜 인 것
+            System.out.print("해당 지점의 경과 날짜 : " + n + " || ");
+            int dayM = n * a - (n - 1) * b; // nA - (n-1)B
+            System.out.println("dayM : " + dayM);
 
-			if ( dayM >= v && dayM < (v + (a - b)) ) {
-				// 전체 막대의 길이와 전체 막대의 길이에 올라가는 길이와 내려가는 길이의 차이를 더한 값의 사이에 있다면
-				System.out.println(n);
-				break;
-			} else if ( dayM > v ) {
-				// 전체 막대의 길이와 올라가는 길이와 내려가는 길이의 차이를 더한 값 보다 크다면 end 값에 mid 값  할당
-				System.out.println("end값 교체 " + end + " -> " + mid);
-				end = mid;
-			} else {
-				// 전체 막대의 길이보다 작다면 start 값에 mid값 할당
-				System.out.println("start값 교체 " + start + " -> " + mid);
-				start = mid;
-			}
-		}
+            if (dayM >= v && dayM < (v + (a - b))) {
+                // 전체 막대의 길이와 전체 막대의 길이에 올라가는 길이와 내려가는 길이의 차이를 더한 값의 사이에 있다면
+                System.out.println(n);
+                break;
+            } else if (dayM > v) {
+                // 전체 막대의 길이와 올라가는 길이와 내려가는 길이의 차이를 더한 값 보다 크다면 end 값에 mid 값  할당
+                System.out.println("end값 교체 " + end + " -> " + mid);
+                end = mid;
+            } else {
+                // 전체 막대의 길이보다 작다면 start 값에 mid값 할당
+                System.out.println("start값 교체 " + start + " -> " + mid);
+                start = mid;
+            }
+        }
 
-	}
+    }
 }

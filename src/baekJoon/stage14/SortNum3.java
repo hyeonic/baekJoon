@@ -12,65 +12,65 @@ import java.io.OutputStreamWriter;
  */
 public class SortNum3 {
 
-	public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException {
 
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-		int size = Integer.parseInt( br.readLine() );
-		int[] intArray = new int[size];
+        int size = Integer.parseInt(br.readLine());
+        int[] intArray = new int[size];
 
-		for( int i = 0; i < size; ++i ) {
-			intArray[i] = Integer.parseInt( br.readLine() );
-		}
+        for (int i = 0; i < size; ++i) {
+            intArray[i] = Integer.parseInt(br.readLine());
+        }
 
-		intArray = sort(intArray);
+        intArray = sort(intArray);
 
-		for( int i = 0; i < intArray.length; ++i ) {
-			bw.write( intArray[i] + "\n" );
-		}
+        for (int i = 0; i < intArray.length; ++i) {
+            bw.write(intArray[i] + "\n");
+        }
 
-		bw.flush();
-		br.close();
-		bw.close();
-	}
+        bw.flush();
+        br.close();
+        bw.close();
+    }
 
-	public static int[] sort( int[] intArray ) {
+    public static int[] sort(int[] intArray) {
 
-		int max = max( intArray );
-		int[] aux = new int[ intArray.length ];
-		int[] c = new int[ max + 1 ];
+        int max = max(intArray);
+        int[] aux = new int[intArray.length];
+        int[] c = new int[max + 1];
 
-		for( int i = 0; i < c.length; ++i ) {
-			c[i] = 0;
-		}
+        for (int i = 0; i < c.length; ++i) {
+            c[i] = 0;
+        }
 
-		// 각 원소 갯수 계산
-        for ( int i = 0; i<intArray.length; ++i ) {
+        // 각 원소 갯수 계산
+        for (int i = 0; i < intArray.length; ++i) {
             c[intArray[i]] += 1;
         }
         // 누적합 계산
-        for ( int i = 1; i < c.length; ++i ) {
-            c[i] += c[i-1];
+        for (int i = 1; i < c.length; ++i) {
+            c[i] += c[i - 1];
         }
         // 누적합을 이용해 정렬
-        for ( int i = intArray.length-1; i >= 0; --i ) {
+        for (int i = intArray.length - 1; i >= 0; --i) {
             aux[--c[intArray[i]]] = intArray[i];
         }
 
-		return aux;
-	}
+        return aux;
+    }
 
-	public static int max( int[] intArray ) {
+    public static int max(int[] intArray) {
 
-		int max = 0;
+        int max = 0;
 
-		for( int i = 0; i < intArray.length; ++i ) {
-			if( max < intArray[i] ) {
-				max = intArray[i];
-			}
-		}
+        for (int i = 0; i < intArray.length; ++i) {
+            if (max < intArray[i]) {
+                max = intArray[i];
+            }
+        }
 
-		return max;
-	}
+        return max;
+    }
 }

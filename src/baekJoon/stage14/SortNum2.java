@@ -14,26 +14,26 @@ import java.util.Collections;
  */
 public class SortNum2 {
 
-	public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException {
 
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-		int size = Integer.parseInt( br.readLine() );
-		ArrayList<Integer> intList = new ArrayList();
+        int size = Integer.parseInt(br.readLine());
+        ArrayList<Integer> intList = new ArrayList();
 
-		for( int i = 0; i < size; ++i ) {
-			intList.add( Integer.parseInt( br.readLine() ) );
-		}
+        for (int i = 0; i < size; ++i) {
+            intList.add(Integer.parseInt(br.readLine()));
+        }
 
-		Collections.sort(intList);
+        Collections.sort(intList);
 
-		for( int i = 0; i < intList.size(); ++i ) {
-			bw.write( intList.get(i) + "\n" );
-		}
+        for (int i = 0; i < intList.size(); ++i) {
+            bw.write(intList.get(i) + "\n");
+        }
 
-		bw.flush();
-		br.close();
-		bw.close();
-	}
+        bw.flush();
+        br.close();
+        bw.close();
+    }
 }

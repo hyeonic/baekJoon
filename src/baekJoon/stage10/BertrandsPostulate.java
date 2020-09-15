@@ -15,50 +15,50 @@ import java.io.OutputStreamWriter;
  */
 public class BertrandsPostulate {
 
-	public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException {
 
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-		boolean isDone = true;
+        boolean isDone = true;
 
-		while( isDone ) {
-			int m = Integer.parseInt( br.readLine() );
-			int n = 2 * m;
-			int count = 0;
+        while (isDone) {
+            int m = Integer.parseInt(br.readLine());
+            int n = 2 * m;
+            int count = 0;
 
-			if ( m == 0 ) {
-				isDone = false;
-				break;
-			}
+            if (m == 0) {
+                isDone = false;
+                break;
+            }
 
-			boolean[] array = new boolean[n + 1];
-			array[0] = false;
-			array[1] = false;
-			for ( int i = 2; i <= n; ++i ) {
-				array[i] = true;
-			}
+            boolean[] array = new boolean[n + 1];
+            array[0] = false;
+            array[1] = false;
+            for (int i = 2; i <= n; ++i) {
+                array[i] = true;
+            }
 
-			if ( m >= 1 && m <= 1000000 && n >= 1 && m <= 100000000 ) {
+            if (m >= 1 && m <= 1000000 && n >= 1 && m <= 100000000) {
 
-				for( int i = 2; i*i <= n; ++i ) {
-					for( int j = i*i; j <= n;  j += i ) {
-						array[j] =false;
-					}
-				}
+                for (int i = 2; i * i <= n; ++i) {
+                    for (int j = i * i; j <= n; j += i) {
+                        array[j] = false;
+                    }
+                }
 
-				for(int i = m + 1; i <= n; ++i ) {
-		            if(true == array[i]) {
-		            	++count;
-		            }
-		        }
-			}
-			bw.write(count + "\n");
-		}
+                for (int i = m + 1; i <= n; ++i) {
+                    if (true == array[i]) {
+                        ++count;
+                    }
+                }
+            }
+            bw.write(count + "\n");
+        }
 
-		bw.flush();
-		br.close();
-		bw.close();
-	}
+        bw.flush();
+        br.close();
+        bw.close();
+    }
 
 }

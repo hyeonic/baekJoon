@@ -11,26 +11,26 @@ import java.util.StringTokenizer;
 
 // 5-3 10817 세 수
 public class ThreeNumber {
-	public static void main(String[] args ) throws IOException {
+    public static void main(String[] args) throws IOException {
 
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-		StringTokenizer st = new StringTokenizer( br.readLine(), " " );
+        StringTokenizer st = new StringTokenizer(br.readLine(), " ");
 
-		ArrayList<Integer> nums = new ArrayList();
+        ArrayList<Integer> nums = new ArrayList();
 
-		while( st.hasMoreTokens() ) {
-			int num = Integer.parseInt( st.nextToken() );
-			nums.add(num);
-		}
+        while (st.hasMoreTokens()) {
+            int num = Integer.parseInt(st.nextToken());
+            nums.add(num);
+        }
 
-		Collections.sort(nums);
+        Collections.sort(nums);
 
-		bw.write( nums.get(1) + "" );
+        bw.write(nums.get(1) + "");
 
-		bw.flush();
-		br.close();
-		bw.close();
-	}
+        bw.flush();
+        br.close();
+        bw.close();
+    }
 }

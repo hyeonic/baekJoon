@@ -12,52 +12,52 @@ import java.util.StringTokenizer;
 // knapsack 알고리즘
 public class NomalBackpack {
 
-	public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException {
 
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-		StringTokenizer st = new StringTokenizer( br.readLine(), " " );
-		int n = Integer.parseInt( st.nextToken() );
-		int k = Integer.parseInt( st.nextToken() );
+        StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+        int n = Integer.parseInt(st.nextToken());
+        int k = Integer.parseInt(st.nextToken());
 
-		ArrayList<Item> items = new ArrayList();
-		int[][] dp = new int[n + 1][k + 1];
+        ArrayList<Item> items = new ArrayList();
+        int[][] dp = new int[n + 1][k + 1];
 
-		items.add( new Item( 0, 0 ) );
+        items.add(new Item(0, 0));
 
-		for( int i = 1; i <= n; ++i ) {
-			st = new StringTokenizer( br.readLine(), " " );
-			int weight = Integer.parseInt( st.nextToken() );
-			int value = Integer.parseInt( st.nextToken() );
+        for (int i = 1; i <= n; ++i) {
+            st = new StringTokenizer(br.readLine(), " ");
+            int weight = Integer.parseInt(st.nextToken());
+            int value = Integer.parseInt(st.nextToken());
 
-			Item item = new Item( weight, value );
-			items.add( item );
-		}
+            Item item = new Item(weight, value);
+            items.add(item);
+        }
 
-		for( int i = 1; i <= n; ++i ) {
-			for( int j = 1; j <= k; ++j ) {
-				dp[i][j] = dp[i - 1][j];
-				if( j - items.get(i).weight >= 0 ) {
-					dp[i][j] = Math.max( dp[i - 1][j], dp[i - 1][j - items.get(i).weight] + items.get(i).value );
-				}
-			}
-		}
+        for (int i = 1; i <= n; ++i) {
+            for (int j = 1; j <= k; ++j) {
+                dp[i][j] = dp[i - 1][j];
+                if (j - items.get(i).weight >= 0) {
+                    dp[i][j] = Math.max(dp[i - 1][j], dp[i - 1][j - items.get(i).weight] + items.get(i).value);
+                }
+            }
+        }
 
-		bw.write( dp[n][k] + "" );
+        bw.write(dp[n][k] + "");
 
-		bw.flush();
-		br.close();
-		bw.close();
-	}
+        bw.flush();
+        br.close();
+        bw.close();
+    }
 
-	private static class Item {
-		private int weight;
-		private int value;
+    private static class Item {
+        private int weight;
+        private int value;
 
-		public Item( int weight, int value ) {
-			this.weight = weight;
-			this.value = value;
-		}
-	}
+        public Item(int weight, int value) {
+            this.weight = weight;
+            this.value = value;
+        }
+    }
 }

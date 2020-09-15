@@ -5,23 +5,23 @@ import java.util.Scanner;
 // 1-9 10430 나머지
 public class Remainder {
 
-	public static void main(String[] args) {
-		
-		Scanner sc = new Scanner(System.in);
+    public static void main(String[] args) {
 
-		int a;
-		int b;
-		int c;
+        Scanner sc = new Scanner(System.in);
 
-		a = sc.nextInt();
-		b = sc.nextInt();
-		c = sc.nextInt();
+        int a;
+        int b;
+        int c;
 
-		System.out.println((a + b) % c);
-		System.out.println(((a % c) + (b % c)) % c);
-		System.out.println((a * b) % c);
-		System.out.println(((a % c) * (b % c)) % c);
+        a = sc.nextInt();
+        b = sc.nextInt();
+        c = sc.nextInt();
 
-		sc.close();
-	}
+        System.out.println((a + b) % c);
+        System.out.println(((a % c) + (b % c)) % c);
+        System.out.println((a * b) % c);
+        System.out.println(((a % c) * (b % c)) % c);
+
+        sc.close();
+    }
 }
