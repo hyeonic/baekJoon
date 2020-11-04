@@ -47,16 +47,7 @@ java로 풀어보는 baekjoon 단계별로 풀어보기
   | 2. [**10951**](https://www.acmicpc.net/problem/10951) -> [A + B - 4](<https://github.com/hyeonic/baekJoon/blob/master/src/baekJoon/stage04/AplusBminus4.java>) |
   | 3. [**1110**](https://www.acmicpc.net/problem/1110) -> [더하기 사이클](<https://github.com/hyeonic/baekJoon/blob/master/src/baekJoon/stage04/PlusCycle.java>) |
 
-  | stage5 실습1 |
-  |------------------------------------------------------------------------|
-  | 1. [**10039**](https://www.acmicpc.net/problem/10039) -> [평균 점수](<https://github.com/hyeonic/baekJoon/blob/master/src/baekJoon/stage05/AverageScore.java>) |
-  | 2. [**5543**](https://www.acmicpc.net/problem/5543) -> [상근날드](<https://github.com/hyeonic/baekJoon/blob/master/src/baekJoon/stage05/Lunch.java>) |
-  | 3. [**10817**](https://www.acmicpc.net/problem/10817) -> [세 수](<https://github.com/hyeonic/baekJoon/blob/master/src/baekJoon/stage05/ThreeNumber.java>) |
-  | 4. [**2523**](https://www.acmicpc.net/problem/2523) -> [별 찍기 - 13](<https://github.com/hyeonic/baekJoon/blob/master/src/baekJoon/stage05/StarStamping13.java>) |
-  | 5. [**2446**](https://www.acmicpc.net/problem/2446) ->[별 찍기 - 9](<https://github.com/hyeonic/baekJoon/blob/master/src/baekJoon/stage05/StarStamping9.java>) |
-  | 6. [**10996**](https://www.acmicpc.net/problem/10996) -> [별 찍기 - 21](<https://github.com/hyeonic/baekJoon/blob/master/src/baekJoon/stage05/StarStamping21.java>) |
-
-  | stage6 1차원 배열 |
+  | stage5 1차원 배열 |
   |------------------------------------------------------------------------|
   | 1. [**10818**](https://www.acmicpc.net/problem/10818) -> 최소, 최대 |
   | 2. [**2562**](https://www.acmicpc.net/problem/2562) -> 최댓값 |
@@ -66,13 +57,13 @@ java로 풀어보는 baekjoon 단계별로 풀어보기
   | 6. [**8958**](https://www.acmicpc.net/problem/8958) -> OX퀴즈 |
   | 7. [**4344**](https://www.acmicpc.net/problem/4344) -> 평균은 넘겠지 |
 
-  | stage7 함수 |
+  | stage6 함수 |
   |------------------------------------------------------------------------|
   | 1. [**15596**](https://www.acmicpc.net/problem/15596) -> [정수 N개의 합](<https://github.com/hyeonic/baekJoon/blob/master/src/baekJoon/stage07/IntNSum.java>) |
   | 2. [**4673**](https://www.acmicpc.net/problem/4673) -> [셀프 넘버](<https://github.com/hyeonic/baekJoon/blob/master/src/baekJoon/stage07/SelfNumber.java>) |
   | 3. [**1065**](https://www.acmicpc.net/problem/1065) -> [한수](<https://github.com/hyeonic/baekJoon/blob/master/src/baekJoon/stage07/Hansu.java>) |
 
-  | stage8 문자열 |
+  | stage7 문자열 |
   |------------------------------------------------------------------------|
   | 1. [**11654**](https://www.acmicpc.net/problem/11654) -> 아스키 코드 |
   | 2. [**11720**](https://www.acmicpc.net/problem/11720) -> 숫자의 합 |
@@ -85,7 +76,7 @@ java로 풀어보는 baekjoon 단계별로 풀어보기
   | 9. [**2941**](https://www.acmicpc.net/problem/2941) -> [크로아티아 알파벳](<https://github.com/hyeonic/baekJoon/blob/master/src/baekJoon/stage08/CroatiaAlphabet.java>) |
   | 10. [**1316**](https://www.acmicpc.net/problem/1316) -> [그룹 단어 체커](<https://github.com/hyeonic/baekJoon/blob/master/src/baekJoon/stage08/GroupWordChecker.java>) |  
 
-  | stage9 수학 1 단계 |
+  | stage8 수학 1 단계 |
   |------------------------------------------------------------------------|
   | 1. [**1712**](https://www.acmicpc.net/problem/1712) -> 손익분기점 |
   | 2. [**2839**](https://www.acmicpc.net/problem/2839) -> 설탕 배달 |
@@ -97,7 +88,7 @@ java로 풀어보는 baekjoon 단계별로 풀어보기
   | 7. [**2775**](https://www.acmicpc.net/problem/2775) -> 부녀회장이 될테야 |
   | 8. [**1011**](https://www.acmicpc.net/problem/1011) -> [Fly me to the Alpha Centauri](<https://github.com/hyeonic/baekJoon/blob/master/src/baekJoon/stage09/FlyMeToTheAlphaCentauri.java>) |
 
-  | stage10 수학 2 단계 |
+  | stage09 수학 2 단계 |
   |------------------------------------------------------------------------|
   | 1. [**1978**](https://www.acmicpc.net/problem/1978) -> 소수 찾기 |
   | 2. [**2581**](https://www.acmicpc.net/problem/2581) -> 소수 |
@@ -110,18 +101,14 @@ java로 풀어보는 baekjoon 단계별로 풀어보기
   | 9. [**3053**](https://www.acmicpc.net/problem/3053) -> 택시 기하학 |
   | 10. [**1002**](https://www.acmicpc.net/problem/1002) -> 터렛 |
 
-  | stage11 재귀 단계 |
+  | stage10 재귀 단계 |
   |------------------------------------------------------------------------|
   | 1. [**10872**](https://www.acmicpc.net/problem/10872) -> 팩토리얼 |
   | 2. [**10870**](https://www.acmicpc.net/problem/10870) -> 피보나치 수 5 |
   | 3. [**2447**](https://www.acmicpc.net/problem/2447) -> 별 찍기 - 10 |
   | 4. [**11729**](https://www.acmicpc.net/problem/11729) -> 하노이 탑 이동 순서 |
 
-  | stage12 실습2 |
-  |------------------------------------------------------------------------|  
-  | 준비중 |
-
-  | stage13 브루트 포스 단계 |
+  | stage11 브루트 포스 단계 |
   |------------------------------------------------------------------------|   
   | 1. [**2798**](https://www.acmicpc.net/problem/2798) -> 블랙잭 |
   | 2. [**2231**](https://www.acmicpc.net/problem/2231) -> 분해합 |
@@ -129,7 +116,7 @@ java로 풀어보는 baekjoon 단계별로 풀어보기
   | 4. [**1018**](https://www.acmicpc.net/problem/1018) -> 체스판 다시 칠하기 |
   | 5. [**1436**](https://www.acmicpc.net/problem/1436) -> 영화감독 숌 |
 
-  | stage14 정렬 |
+  | stage12 정렬 |
   |------------------------------------------------------------------------|   
   | 1. [**2750**](https://www.acmicpc.net/problem/2750) -> 수 정렬하기 |  
   | 2. [**2751**](https://www.acmicpc.net/problem/2751) -> 수 정렬하기 2 |  
@@ -141,7 +128,7 @@ java로 풀어보는 baekjoon 단계별로 풀어보기
   | 8. [**1181**](https://www.acmicpc.net/problem/1181) -> 단어 정렬 |  
   | 9. [**10814**](https://www.acmicpc.net/problem/10814) -> 나이순 정렬 |  
 
-  | stage15 백트래킹 |
+  | stage13 백트래킹 |
   |------------------------------------------------------------------------|   
   | 1. [**15649**](https://www.acmicpc.net/problem/15649) -> N과 M(1) |  
   | 2. [**15650**](https://www.acmicpc.net/problem/15650) -> N과 M(2) |  
@@ -152,7 +139,7 @@ java로 풀어보는 baekjoon 단계별로 풀어보기
   | 7. [**14888**](https://www.acmicpc.net/problem/14888) -> 연산자 끼워넣기 |  
   | 8. [**14889**](https://www.acmicpc.net/problem/14889) -> 스타트와 링크 |
 
-  | stage16 동적 계획법 1 |
+  | stage14 동적 계획법 1 |
   |------------------------------------------------------------------------|   
   | 1. [**2748**](https://www.acmicpc.net/problem/2748) -> 피보나치 수 2 |     
   | 2. [**1003**](https://www.acmicpc.net/problem/1003) -> 피보나치 함수 |     
@@ -171,18 +158,18 @@ java로 풀어보는 baekjoon 단계별로 풀어보기
   | 15. [**1912**](https://www.acmicpc.net/problem/1912) -> 연속합 |     
   | 16. [**12865**](https://www.acmicpc.net/problem/12865) -> 평범한 배낭 |     
   
-  | stage17 실습3 |
+  | stage15 실습3 |
   |------------------------------------------------------------------------|  
   | 준비중 |
   
-  | stage18 그리디 알고리즘 |
+  | stage16 그리디 알고리즘 |
   |------------------------------------------------------------------------|  
   | 1. [**11047**](https://www.acmicpc.net/problem/11047) -> [동전 0](<https://github.com/hyeonic/baekjoon/blob/master/src/baekJoon/stage18/ZeroCoin.java>) |   
   | 2. [**1931**](https://www.acmicpc.net/problem/1931) -> [회의실배정](<https://github.com/hyeonic/baekjoon/blob/master/src/baekJoon/stage18/AllocationOfConferenceRoom.java>) |   
   | 3. [**11399**](https://www.acmicpc.net/problem/11399) -> [ATM](<https://github.com/hyeonic/baekjoon/blob/master/src/baekJoon/stage18/ATM.java>) |   
   | 4. [**1541**](https://www.acmicpc.net/problem/1541) -> [잃어버린 괄호](<https://github.com/hyeonic/baekjoon/blob/master/src/baekJoon/stage18/LostParenthesis.java>) |   
   
-  | stage19 수학 3 |
+  | stage17 수학 3 |
   |------------------------------------------------------------------------|  
   | 1. [**5086**](https://www.acmicpc.net/problem/5086) -> [배수와 약수](<https://github.com/hyeonic/baekjoon/blob/master/src/baekJoon/stage19/MultipleAndDivision.java>) |  
   | 2. [**1037**](https://www.acmicpc.net/problem/1037) -> [약수](<https://github.com/hyeonic/baekjoon/blob/master/src/baekJoon/stage19/Divisor.java>) |
@@ -194,3 +181,26 @@ java로 풀어보는 baekjoon 단계별로 풀어보기
   | 8. [**11051**](https://www.acmicpc.net/problem/11051) -> [이항계수 2](<https://github.com/hyeonic/baekjoon/blob/master/src/baekJoon/stage19/BinomialFactor2.java>) |
   | 9. [**9375**](https://www.acmicpc.net/problem/9375) -> [패션왕 신해빈](<https://github.com/hyeonic/baekjoon/blob/master/src/baekJoon/stage19/FashionKingSHB.java>) |
   | 10. [**1676**](https://www.acmicpc.net/problem/1676) -> [팩토리얼 0의 개수](<https://github.com/hyeonic/baekjoon/blob/master/src/baekJoon/stage19/NumberOfZero.java>) |
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  ### stage 수정 전 코드
+  | pre stage5 실습1 |
+  |------------------------------------------------------------------------|
+  | 1. [**10039**](https://www.acmicpc.net/problem/10039) -> [평균 점수](<https://github.com/hyeonic/baekJoon/blob/master/src/baekJoon/stage05/AverageScore.java>) |
+  | 2. [**5543**](https://www.acmicpc.net/problem/5543) -> [상근날드](<https://github.com/hyeonic/baekJoon/blob/master/src/baekJoon/stage05/Lunch.java>) |
+  | 3. [**10817**](https://www.acmicpc.net/problem/10817) -> [세 수](<https://github.com/hyeonic/baekJoon/blob/master/src/baekJoon/stage05/ThreeNumber.java>) |
+  | 4. [**2523**](https://www.acmicpc.net/problem/2523) -> [별 찍기 - 13](<https://github.com/hyeonic/baekJoon/blob/master/src/baekJoon/stage05/StarStamping13.java>) |
+  | 5. [**2446**](https://www.acmicpc.net/problem/2446) ->[별 찍기 - 9](<https://github.com/hyeonic/baekJoon/blob/master/src/baekJoon/stage05/StarStamping9.java>) |
+  | 6. [**10996**](https://www.acmicpc.net/problem/10996) -> [별 찍기 - 21](<https://github.com/hyeonic/baekJoon/blob/master/src/baekJoon/stage05/StarStamping21.java>) |
