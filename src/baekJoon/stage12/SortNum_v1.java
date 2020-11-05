@@ -8,7 +8,7 @@ import java.io.OutputStreamWriter;
 import java.util.HashSet;
 
 // 14-1 2750 수 정렬하기
-public class SortNum {
+public class SortNum_v1 {
 
     public static void main(String[] args) throws IOException {
 
